@@ -36,17 +36,17 @@ def turn()
 end
 
 def turn_count(board)
-  counter = 0 
+  counter = 0
   board.each do |index|
-    if index.position_taken? 
+    if index.position_taken?
       counter += 1
-    end #close if block 
-  end #close iteration block 
-  return counter 
+    end #close if block
+  end #close iteration block
+  return counter
 end
 
-def current_player()
-  #code
+def current_player(board)
+  turn_count(board) % 2 == 0 ? "X" : "O"
 end
 
 def won?(board)
