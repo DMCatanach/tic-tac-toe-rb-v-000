@@ -35,8 +35,14 @@ def turn()
   #code
 end
 
-def turn_count()
-  #code
+def turn_count(board)
+  counter = 0 
+  board.each do |index|
+    if index.position_taken? 
+      counter += 1
+    end #close if block 
+  end #close iteration block 
+  return counter 
 end
 
 def current_player()
@@ -62,7 +68,7 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board) 
+  if won?(board)
     return board[won?(board)[0]]
-  end #close block 
-end #close method definiton 
+  end #close block
+end #close method definiton
