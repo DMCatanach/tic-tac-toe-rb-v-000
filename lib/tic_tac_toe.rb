@@ -18,3 +18,7 @@ end
 def input_to_index()
   #code
 end
+
+def move() 
+  #code 
+end 
