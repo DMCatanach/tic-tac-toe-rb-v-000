@@ -19,6 +19,10 @@ def input_to_index()
   #code
 end
 
-def move() 
-  #code 
+def move()
+  #code
+end
+
+def position_taken?(board, index) 
+  !(board[index].nil? || board[index] == " ") 
 end 
