@@ -40,12 +40,12 @@ def turn(board)
   input = gets.strip
   index = input_to_index(input)
   if valid_move?(board, index)
-    move(board, index)
+    move(board, index, current_player)
     display_board(board)
   else
     turn(board)
   end #close if block
-end #close method definition 
+end #close method definition
 
 def turn_count(board)
   counter = 0
