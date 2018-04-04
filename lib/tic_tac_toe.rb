@@ -58,5 +58,11 @@ def draw?(board)
 end
 
 def over?(board)
-  won?(board) || draw?(board) 
-end 
+  won?(board) || draw?(board)
+end
+
+def winner(board)
+  if won?(board) 
+    return board[won?(board)[0]]
+  end #close block 
+end #close method definiton 
