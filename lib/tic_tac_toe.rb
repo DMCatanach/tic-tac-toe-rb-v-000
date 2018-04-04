@@ -38,7 +38,7 @@ end
 def turn_count(board)
   counter = 0
   board.each do |index|
-    if index.position_taken?
+    if index != " "
       counter += 1
     end #close if block
   end #close iteration block
