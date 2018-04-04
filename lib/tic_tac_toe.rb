@@ -88,5 +88,13 @@ end #close method definiton
 #And now, the critical method!
 
 def play(board)
-  #code
+  until over?(board) 
+    turn(board) 
+  end #close block 
+
+  if won?(board)
+    puts "Congratulations #{winner(board)}!" 
+  else 
+    puts "Cat's Game!" 
+  end #close conditional block 
 end 
