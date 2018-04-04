@@ -28,5 +28,9 @@ def position_taken?(board, index)
 end
 
 def valid_move?()
-  #code 
-end 
+  #code
+end
+
+def turn()
+  #code
+end
