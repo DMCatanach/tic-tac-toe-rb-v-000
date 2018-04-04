@@ -85,8 +85,8 @@ def winner(board)
   end #close block
 end #close method definiton
 
-#And now, the critical method! 
+#And now, the critical method!
 
-def play(board) 
-  #code 
+def play(board)
+  #code
 end 
