@@ -36,15 +36,15 @@ def valid_move?(board, index)
 end
 
 def turn(board)
-  puts "Please etner 1-9:" 
-  input = gets.strip 
-  index = input_to_index(input) 
+  puts "Please etner 1-9:"
+  input = gets.strip
+  index = input_to_index(input)
   if valid_move?(board, index)
     move(board, index)
-    display_board(board) 
-  else 
+    display_board(board)
+  else
     turn(board)
-  end #close if block 
+  end #close if block
 end #close method definition 
 
 def turn_count(board)
