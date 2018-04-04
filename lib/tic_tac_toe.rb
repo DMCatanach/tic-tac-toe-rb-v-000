@@ -84,3 +84,9 @@ def winner(board)
     return board[won?(board)[0]]
   end #close block
 end #close method definiton
+
+#And now, the critical method! 
+
+def play(board) 
+  #code 
+end 
