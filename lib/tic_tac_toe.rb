@@ -51,4 +51,8 @@ end #close method definition
 
 def full?(board)
   !(board.include?(" "))
+end
+
+def draw?(board) 
+  full?(board) && !(won?(board))
 end 
