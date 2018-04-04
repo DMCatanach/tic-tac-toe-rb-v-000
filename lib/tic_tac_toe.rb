@@ -53,6 +53,10 @@ def full?(board)
   !(board.include?(" "))
 end
 
-def draw?(board) 
+def draw?(board)
   full?(board) && !(won?(board))
+end
+
+def over?(board)
+  won?(board) || draw?(board) 
 end 
