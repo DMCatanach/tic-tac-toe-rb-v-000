@@ -34,3 +34,7 @@ end
 def turn()
   #code
 end
+
+def turn_count()
+  #code 
+end 
