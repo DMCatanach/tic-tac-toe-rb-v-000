@@ -36,5 +36,9 @@ def turn()
 end
 
 def turn_count()
-  #code 
-end 
+  #code
+end
+
+def current_player()
+  #code
+end
